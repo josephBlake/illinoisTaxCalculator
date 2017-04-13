@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0625AA1E9FD09D003F75A4 /* CountiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */; };
+		3F0625AC1E9FD151003F75A4 /* CountyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0625AB1E9FD151003F75A4 /* CountyClass.swift */; };
 		3FCFD5D91E97E4CB00F3671B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFD5D81E97E4CB00F3671B /* AppDelegate.swift */; };
 		3FCFD5DB1E97E4CB00F3671B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFD5DA1E97E4CB00F3671B /* ViewController.swift */; };
 		3FCFD5DE1E97E4CB00F3671B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCFD5DC1E97E4CB00F3671B /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountiesViewController.swift; sourceTree = "<group>"; };
+		3F0625AB1E9FD151003F75A4 /* CountyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyClass.swift; sourceTree = "<group>"; };
 		3FCFD5D51E97E4CB00F3671B /* taxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCFD5D81E97E4CB00F3671B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCFD5DA1E97E4CB00F3671B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				3FCFD5D81E97E4CB00F3671B /* AppDelegate.swift */,
 				3FCFD5DA1E97E4CB00F3671B /* ViewController.swift */,
 				3FCFD5DC1E97E4CB00F3671B /* Main.storyboard */,
+				3F0625AB1E9FD151003F75A4 /* CountyClass.swift */,
+				3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */,
 				3FCFD5DF1E97E4CB00F3671B /* Assets.xcassets */,
 				3FCFD5E11E97E4CB00F3671B /* LaunchScreen.storyboard */,
 				3FCFD5E41E97E4CB00F3671B /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0625AC1E9FD151003F75A4 /* CountyClass.swift in Sources */,
 				3FCFD5DB1E97E4CB00F3671B /* ViewController.swift in Sources */,
+				3F0625AA1E9FD09D003F75A4 /* CountiesViewController.swift in Sources */,
 				3FCFD5D91E97E4CB00F3671B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +511,7 @@
 				3FCFD5FF1E97E4CB00F3671B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCFD6001E97E4CB00F3671B /* Build configuration list for PBXNativeTarget "taxCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				3FCFD6021E97E4CB00F3671B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCFD6031E97E4CB00F3671B /* Build configuration list for PBXNativeTarget "taxCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				3FCFD6051E97E4CB00F3671B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
