@@ -11,15 +11,19 @@ import UIKit
 class CountyClass: NSObject
 {
     var name = ""
-    var location = ""
     var taxRate = 0.0
-    var image = UIImage(named: "default")
+    var image = UIImage(named: "1")
     
-    init(Name:String, Location:String, TaxRate:Double, Image:UIImage)
+    init(Name:String, TaxRate:Double, Image:UIImage)
     {
         name = Name
-        location = Location
         taxRate = TaxRate
         image = Image
+    }
+    
+    init(Name:String, TaxRate:Double)
+    {
+        name = Name
+        taxRate = TaxRate
     }
 }
