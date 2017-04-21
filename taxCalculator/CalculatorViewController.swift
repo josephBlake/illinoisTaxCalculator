@@ -15,6 +15,8 @@ class CalculatorViewController: UIViewController
     @IBOutlet weak var priceAmount: UITextField!
     @IBOutlet weak var totalAmount: UILabel!
     
+    var countyTaxing:CountyClass!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -23,9 +25,9 @@ class CalculatorViewController: UIViewController
     @IBAction func addedTogether(_ sender: Any)
     {
         let tax = Double(taxAmount.text!)
-        let taxy = tax
         let price = Double(priceAmount.text!)
-        let total = tax! + price!
+        let taxy = (tax! / 100) * price!
+        let total = taxy + price!
         let totally = String(total)
         totalAmount.text = "$" + totally
         
