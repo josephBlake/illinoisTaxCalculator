@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CountiesViewController: UIViewController
+class CountiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     
     @IBOutlet weak var myTableView: UITableView!
@@ -135,9 +135,20 @@ class CountiesViewController: UIViewController
         let taxy = String(myCountyObject[indexPath.row].taxRate)
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         cell.textLabel?.text = myCountyObject[indexPath.row].name
-        cell.detailTextLabel?.text = taxy
+        cell.detailTextLabel?.text = taxy + "%"
         
         return cell
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let detailView = segue.destination as! InfoViewController
+        let selectedRow = myTableView.indexPathForSelectedRow?.row
+        detailView.countyDetail = myCountyObject[selectedRow!]
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        myTableView.reloadData()
     }
 }
