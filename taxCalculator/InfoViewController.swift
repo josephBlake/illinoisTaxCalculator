@@ -22,11 +22,12 @@ class InfoViewController: UIViewController
         mapLocation.image = countyDetail.image
         countyName.text = countyDetail.name
         rateOfTax.text = String(countyDetail.taxRate) + "%"
+        print(countyDetail.taxRate)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let calculatorVC = segue.destination as! CalculatorViewController
-        calculatorVC.taxAmount.text = String(countyDetail.taxRate)
+        calculatorVC.countyTaxing = countyDetail
     }
 }

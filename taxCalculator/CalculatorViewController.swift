@@ -20,6 +20,10 @@ class CalculatorViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        if countyTaxing.taxRate != 0 && countyTaxing.taxRate != nil
+        {
+            taxAmount.text = String(countyTaxing.taxRate)
+        }
     }
     
     @IBAction func addedTogether(_ sender: Any)
