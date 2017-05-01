@@ -10,6 +10,7 @@
 		3F0625AA1E9FD09D003F75A4 /* CountiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */; };
 		3F0625AC1E9FD151003F75A4 /* CountyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0625AB1E9FD151003F75A4 /* CountyClass.swift */; };
 		3F3DCDC21EA66A50008C3946 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DCDC11EA66A50008C3946 /* CalculatorViewController.swift */; };
+		3F9ECA1D1EB398F900962E50 /* CalculatorTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9ECA1C1EB398F900962E50 /* CalculatorTwoViewController.swift */; };
 		3FA2D8F21EA907B4007264C0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D8F11EA907B4007264C0 /* InfoViewController.swift */; };
 		3FCFD5D91E97E4CB00F3671B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFD5D81E97E4CB00F3671B /* AppDelegate.swift */; };
 		3FCFD5DB1E97E4CB00F3671B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFD5DA1E97E4CB00F3671B /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountiesViewController.swift; sourceTree = "<group>"; };
 		3F0625AB1E9FD151003F75A4 /* CountyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyClass.swift; sourceTree = "<group>"; };
 		3F3DCDC11EA66A50008C3946 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		3F9ECA1C1EB398F900962E50 /* CalculatorTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTwoViewController.swift; sourceTree = "<group>"; };
 		3FA2D8F11EA907B4007264C0 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3FCFD5D51E97E4CB00F3671B /* taxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCFD5D81E97E4CB00F3671B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				3F0625A91E9FD09D003F75A4 /* CountiesViewController.swift */,
 				3FA2D8F11EA907B4007264C0 /* InfoViewController.swift */,
 				3F3DCDC11EA66A50008C3946 /* CalculatorViewController.swift */,
+				3F9ECA1C1EB398F900962E50 /* CalculatorTwoViewController.swift */,
 				3FCFD5DF1E97E4CB00F3671B /* Assets.xcassets */,
 				3FCFD5E11E97E4CB00F3671B /* LaunchScreen.storyboard */,
 				3FCFD5E41E97E4CB00F3671B /* Info.plist */,
@@ -277,6 +280,7 @@
 				3F0625AA1E9FD09D003F75A4 /* CountiesViewController.swift in Sources */,
 				3FA2D8F21EA907B4007264C0 /* InfoViewController.swift in Sources */,
 				3FCFD5D91E97E4CB00F3671B /* AppDelegate.swift in Sources */,
+				3F9ECA1D1EB398F900962E50 /* CalculatorTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
