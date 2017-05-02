@@ -43,16 +43,16 @@
                                     <segue destination="yoG-4i-B8f" kind="show" id="wQn-No-O4x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Illinois Tax Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-Lq-Msy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Final App Title" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-k3-IUO">
                                 <rect key="frame" x="0.0" y="122" width="375" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fkb-k3-IUO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KIy-dU-kMX"/>
+                            <constraint firstItem="fkb-k3-IUO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="YVO-cC-HsY"/>
+                            <constraint firstAttribute="trailing" secondItem="fkb-k3-IUO" secondAttribute="trailing" id="qli-lo-zlj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mbl-gC-Wml"/>
                 </viewController>
@@ -371,4 +371,7 @@
             <point key="canvasLocation" x="311" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Final App Title" width="619" height="111"/>
+    </resources>
 </document>
