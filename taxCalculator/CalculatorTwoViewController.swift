@@ -14,6 +14,8 @@ class CalculatorTwoViewController: UIViewController
     @IBOutlet weak var taxAmount: UITextField!
     @IBOutlet weak var priceAmount: UITextField!
     @IBOutlet weak var totalAmount: UILabel!
+    @IBOutlet weak var taxPrice: UILabel!
+    
     
     override func viewDidLoad()
     {
@@ -25,8 +27,11 @@ class CalculatorTwoViewController: UIViewController
         let tax = Double(taxAmount.text!)
         let price = Double(priceAmount.text!)
         let taxy = (tax! / 100) * price!
+        let taxtopia = String(format: "$%.2f", taxy)
         let total = taxy + price!
         let totally = String(format: "$%.2f", total)
-        totalAmount.text = totally
+        totalAmount.text = "Grand Total: " + totally
+        taxPrice.text = "Tax Price: " + taxtopia
     }
+    
 }
