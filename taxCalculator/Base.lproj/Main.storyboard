@@ -23,8 +23,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-s7-vOL">
-                                <rect key="frame" x="152" y="284" width="70" height="30"/>
+                                <rect key="frame" x="144" y="284" width="86" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Calculator">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -32,9 +33,17 @@
                                     <segue destination="dnX-PF-iyZ" kind="show" id="omr-jt-SMw"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-k3-IUO">
+                                <rect key="frame" x="0.0" y="122" width="375" height="122"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-GM-VVn">
+                                <rect key="frame" x="73" y="393" width="228" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiY-0I-g68">
-                                <rect key="frame" x="157" y="337" width="61" height="30"/>
+                                <rect key="frame" x="147" y="337" width="81" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Counties">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -42,13 +51,6 @@
                                     <segue destination="yoG-4i-B8f" kind="show" id="wQn-No-O4x"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-k3-IUO">
-                                <rect key="frame" x="0.0" y="122" width="375" height="122"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars_Logo copy copy" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-GM-VVn">
-                                <rect key="frame" x="73" y="393" width="228" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -156,24 +158,10 @@
                                     <constraint firstAttribute="width" constant="156" id="HOP-lk-u7K"/>
                                     <constraint firstAttribute="height" constant="21" id="OkP-g6-vrA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzr-zA-eRb" customClass="Info">
-                                <rect key="frame" x="155" y="504" width="64" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NBp-zM-MRO"/>
-                                    <constraint firstAttribute="width" constant="64" id="cE5-eQ-sCy"/>
-                                </constraints>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tKB-Td-9Uw" kind="show" id="7v6-MB-Dgu"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-Ul-Jis">
                                 <rect key="frame" x="120" y="128" width="135" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,10 +169,25 @@
                                     <constraint firstAttribute="width" constant="135" id="4zC-RC-yo4"/>
                                     <constraint firstAttribute="height" constant="21" id="nEX-LL-5xr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzr-zA-eRb" customClass="Info">
+                                <rect key="frame" x="146" y="504" width="82" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="80Z-Tg-Alb"/>
+                                    <constraint firstAttribute="width" constant="82" id="9tB-TB-kk5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tKB-Td-9Uw" kind="show" id="7v6-MB-Dgu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -226,7 +229,7 @@
                                     <constraint firstAttribute="width" constant="179" id="ZBs-px-Dc7"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Tax Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-bY-5rj">
@@ -235,7 +238,7 @@
                                     <constraint firstAttribute="width" constant="179" id="yFO-4a-XeQ"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgm-s0-AGK">
@@ -256,7 +259,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Q5B-dm-f50"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </label>
@@ -266,7 +269,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="W8D-M6-pJG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </label>
@@ -298,6 +301,7 @@
                             <constraint firstItem="Zgm-s0-AGK" firstAttribute="centerX" secondItem="rOZ-7K-7QH" secondAttribute="centerX" id="3dX-Bo-HEm"/>
                             <constraint firstAttribute="trailing" secondItem="7Pd-so-xht" secondAttribute="trailing" id="4F0-wi-sny"/>
                             <constraint firstItem="7Pd-so-xht" firstAttribute="leading" secondItem="rOZ-7K-7QH" secondAttribute="leading" id="6Hl-GW-kaL"/>
+                            <constraint firstItem="gSP-Mb-jBa" firstAttribute="top" secondItem="H5Y-XY-ZBq" secondAttribute="bottom" constant="8" id="6W9-pg-4Rk"/>
                             <constraint firstAttribute="trailing" secondItem="HB1-89-GGh" secondAttribute="trailing" id="83z-Pi-bVU"/>
                             <constraint firstItem="HB1-89-GGh" firstAttribute="top" secondItem="SAX-HL-hds" secondAttribute="bottom" id="Ac4-vP-Vwb"/>
                             <constraint firstItem="H5Y-XY-ZBq" firstAttribute="centerX" secondItem="rOZ-7K-7QH" secondAttribute="centerX" id="BXW-wZ-uNe"/>
@@ -309,7 +313,6 @@
                             <constraint firstItem="yCf-bY-5rj" firstAttribute="centerX" secondItem="rOZ-7K-7QH" secondAttribute="centerX" id="edi-e2-vY3"/>
                             <constraint firstItem="H5Y-XY-ZBq" firstAttribute="top" secondItem="Zgm-s0-AGK" secondAttribute="bottom" constant="16" id="q7Q-Gh-VbH"/>
                             <constraint firstItem="NOp-0f-iw6" firstAttribute="leading" secondItem="yCf-bY-5rj" secondAttribute="trailing" constant="3" id="sdj-Ke-cYL"/>
-                            <constraint firstItem="gSP-Mb-jBa" firstAttribute="top" secondItem="H5Y-XY-ZBq" secondAttribute="bottom" constant="50" id="y0Z-4F-Uif"/>
                             <constraint firstItem="H5Y-XY-ZBq" firstAttribute="leading" secondItem="RVi-lm-kFC" secondAttribute="trailing" constant="3" id="zIu-F3-SFd"/>
                         </constraints>
                     </view>
@@ -342,7 +345,7 @@
                                     <constraint firstAttribute="width" constant="179" id="QX5-X5-PpI"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Tax Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXK-T9-8Ge">
@@ -351,7 +354,7 @@
                                     <constraint firstAttribute="width" constant="179" id="tUT-GV-s0Y"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW9-cO-1Jd">
@@ -372,7 +375,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="AlE-lw-z0U"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </label>
@@ -382,12 +385,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="fyv-Ki-J1p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh6-eq-EKM">
+                                <rect key="frame" x="285" y="211" width="39" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-A1-6C6">
-                                <rect key="frame" x="142" y="415" width="91" height="91"/>
+                                <rect key="frame" x="132" y="425" width="111" height="110"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="aDy-qK-qFP"/>
@@ -400,18 +409,11 @@
                                     <action selector="addedTogether:" destination="tKB-Td-9Uw" eventType="touchUpInside" id="c4m-aC-AMh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh6-eq-EKM">
-                                <rect key="frame" x="285" y="211" width="39" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2Sz-1i-m5s" firstAttribute="leading" secondItem="fel-f3-bjc" secondAttribute="leading" id="3GK-tA-Yon"/>
                             <constraint firstItem="BXK-T9-8Ge" firstAttribute="centerX" secondItem="fel-f3-bjc" secondAttribute="centerX" id="3Yb-Ac-auz"/>
-                            <constraint firstItem="zSb-A1-6C6" firstAttribute="top" secondItem="r2x-wS-l5L" secondAttribute="bottom" constant="50" id="6F4-Im-fP6"/>
                             <constraint firstItem="kh6-eq-EKM" firstAttribute="leading" secondItem="BXK-T9-8Ge" secondAttribute="trailing" constant="3" id="6KX-F0-s6s"/>
                             <constraint firstItem="EW9-cO-1Jd" firstAttribute="centerX" secondItem="fel-f3-bjc" secondAttribute="centerX" id="AkL-Ix-sPc"/>
                             <constraint firstItem="kh6-eq-EKM" firstAttribute="top" secondItem="18l-nI-DLD" secondAttribute="bottom" constant="42" id="ERG-Jj-me5"/>
@@ -425,6 +427,7 @@
                             <constraint firstItem="r2x-wS-l5L" firstAttribute="centerX" secondItem="fel-f3-bjc" secondAttribute="centerX" id="fn7-La-0nq"/>
                             <constraint firstItem="r2x-wS-l5L" firstAttribute="leading" secondItem="Utk-E4-ZZk" secondAttribute="trailing" constant="3" id="hRM-ag-c67"/>
                             <constraint firstItem="18l-nI-DLD" firstAttribute="top" secondItem="2Sz-1i-m5s" secondAttribute="bottom" constant="20" id="i5g-sK-o66"/>
+                            <constraint firstItem="zSb-A1-6C6" firstAttribute="top" secondItem="r2x-wS-l5L" secondAttribute="bottom" constant="8" id="jDs-XA-JF4"/>
                             <constraint firstAttribute="trailing" secondItem="18l-nI-DLD" secondAttribute="trailing" id="tES-cT-wUR"/>
                             <constraint firstItem="EW9-cO-1Jd" firstAttribute="top" secondItem="BXK-T9-8Ge" secondAttribute="bottom" constant="16" id="wxA-dJ-jnm"/>
                         </constraints>
@@ -461,7 +464,6 @@
     </scenes>
     <resources>
         <image name="Equal_Logo copy" width="512" height="512"/>
-        <image name="Stars_Logo copy copy" width="713" height="710"/>
         <image name="title" width="619" height="111"/>
     </resources>
 </document>
